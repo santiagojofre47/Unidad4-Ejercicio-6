@@ -40,7 +40,7 @@ def main():
 
 if __name__=='__main__':
     jF = ObjectEncoder('datos.json')
-    manejador=ManejadorProvincias()
+    objManejador=ManejadorProvincias()
     
     #Para generar el archivo json con los datos de los provincias usamos:
     #testprovincias(manejador)
@@ -49,5 +49,5 @@ if __name__=='__main__':
 
     #Cuando ya se encuentre cargado el json, usamos
     diccionario=jF.leerJSONArchivo()
-    manejador=jF.decodificarDiccionario(diccionario)
+    objManejador=jF.decodificarDiccionario(diccionario)
     main()
